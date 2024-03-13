@@ -1,0 +1,168 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    /*background-color: #161616;*/
+    font-family: 'Dancing Script', cursive;
+    font-family: 'Josefin Sans', sans-serif;
+    color: #ffffff;
+}
+
+.container {
+    height: 100vh;
+    width: 100%;
+    background: linear-gradient(45deg, #000000, #32004A, #8600c8);
+    background-size: 300% 300%;
+    animation: background 12s ease-in-out infinite;
+}
+
+@keyframes background{
+    0%{
+        background-position: 0 50%;
+    }
+    50%{
+        background-position: 100% 50%;
+    }
+    100%{
+        background-position: 0 50%;
+    }
+}
+
+header {
+  text-align: center;
+}
+
+header h1 {
+    font-family: 'Dancing Script', cursive;
+    color:#8600c8;
+    font-size: 10vh;
+    text-shadow: #8600c8 0px 0px 30px;
+}
+
+.myface {
+    margin-top: 16px;
+    border-radius: 50%;
+    border: 5px solid #8600c8;
+    box-shadow: #8600c8 0px 0px 30px;
+    width: 25vh;
+}
+
+.aboutme p {
+    font-size: 3vh;
+}
+
+.contact {
+    display: flex;
+    justify-content: center;
+}
+
+.contact a {
+    padding-top: 2vh;
+    padding: 1vh;
+}
+
+.logos {
+    background-color: #8600c8;
+    border-radius: 1.7vh;
+    width: 7vh;
+}
+
+@media only screen and (min-width: 769px) {
+
+.container {
+    height: 100vh;
+    width: 100%;
+    background: linear-gradient(45deg, #000000, #180023, #32004A, #180023, #000000);
+    background-size: 300% 300%;
+    animation: background 9s ease-in-out infinite;
+}
+
+@keyframes background{
+    0%{
+        background-position: 0 50%;
+    }
+    50%{
+        background-position: 100% 50%;
+    }
+    100%{
+        background-position: 0 50%;
+    }
+}
+
+    ::-webkit-scrollbar {
+        width: 8px;
+    }
+
+    ::-webkit-scrollbar-thumb {
+        width: 8px;
+        background-color: #000000;
+        border-radius: 3vh;
+        border: solid #8600c8 1px;
+    }
+
+    .txtaboutmeMob{
+        display: none;
+    }
+
+    .contact {
+        padding: 5px;
+        text-align: center;
+        margin-top: 6vh;
+        border-radius: 10px;
+        margin-left: 40%;
+        width: 320px;
+        height: 120px;
+    }
+
+    .logos {
+        transition: all 0.2s ease-in-out;
+    }
+
+    .logos:hover {
+        width: 7.8vh;
+        box-shadow: #8600c8 0px 0px 10px;
+    }
+}
+
+@media only screen and (max-width: 769px) {
+    .txtaboutmePc{
+        display: none;
+    }
+
+@keyframes background{
+    0%{
+        background-position: 0 50%;
+    }
+    50%{
+        background-position: 100% 50%;
+    }
+    100%{
+        background-position: 0 50%;
+    }
+}
+
+.container {
+    height: 100vh;
+    width: 100%;
+    background: linear-gradient(45deg, #000000, #180023, #32004A, #180023, #000000);
+    background-size: 300% 300%;
+    animation: background 5s ease-in-out infinite;
+}
+
+    ::-webkit-scrollbar {
+        width: 6px;
+    }
+
+    ::-webkit-scrollbar-thumb {
+        width: 6px;
+        background-color: #000000;
+        border-radius: 3vh;
+        border: solid #8600c8 1px;
+    }
+
+    .contact {
+        margin-top: 4vh;
+    }
+}
